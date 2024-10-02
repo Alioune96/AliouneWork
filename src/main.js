@@ -18,5 +18,6 @@ let currentUser =JSON.parse(localStorage.getItem('user'))
 const store = createStore(currentUser)
 
 app.use(store)
+app.listen(process.env.PORT || 5173)
 
 
